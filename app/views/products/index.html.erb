@@ -1,0 +1,25 @@
+<h1>All Items</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Stock</th>
+    <th>Buy</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= image_tag "products/#{product.image_url}" %></td>
+    <td><span class="product_title"><%= link_to product.title, product_path(product) %></span><%= product.description %></td>
+    <td class="money"><%= print_price(product.price) %></td>
+    <td><%= print_stock(product.stock) %></td>
+    <td><%= button_to "Add to Cart", order_items_path(product_id: product.id) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<p><%= link_to 'Create a New Listing', new_product_path, id: "new_product" %></p>

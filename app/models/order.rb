@@ -1,0 +1,10 @@
+class Order < ActiveRecord::Base
+  attr_accessible :status, :user_id, :address_id
+  has_many :order_items, dependent: :destroy
+  belongs_to :user
+  belongs_to :address
+
+  def total
+    order_items.map(&:subtotal).sum
+  end
+end
