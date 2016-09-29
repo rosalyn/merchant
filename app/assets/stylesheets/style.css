@@ -445,12 +445,12 @@ h1 + p a[href$="new"]:active,
 }
 #articles .actions a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=20)");
     opacity: 0.2
 }
 #articles .actions a:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=40)");
     opacity: 0.4
 }
 #articles .tag_list {
@@ -483,14 +483,14 @@ h1 + p a[href$="new"]:active,
 .actions a[href$='edit']:before,
 .actions a[data-method='delete']:before {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=20)");
     opacity: 0.2;
     position: relative
 }
 .actions a[href$='edit']:hover:before,
 .actions a[data-method='delete']:hover:before {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=60);
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=60)");
     opacity: 0.6
 }
 .actions a[data-method='delete'] {
@@ -718,7 +718,7 @@ div#account a:hover{
 .main table td{
     background: #f5f5fd;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=30)");
     opacity: 0.3
     border-top: 1px solid #fff;
     border-bottom: 30px solid #fff;
