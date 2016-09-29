@@ -6,7 +6,7 @@ gem 'rails', '3.2.22.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
 gem 'strong_parameters'
 gem 'omniauth-twitter'
 gem 'devise'
