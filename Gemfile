@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.22.1'
+gem 'rails_12factor'
 #gem 'rails', '4.0.2'
 
 # Bundle edge Rails instead:
